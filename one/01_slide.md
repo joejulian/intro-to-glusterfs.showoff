@@ -86,7 +86,7 @@ Distribute takes a list of subvolumes and distributes files across them, effecti
 
 <!SLIDE bullets>
 # Replicate #
-Replicate takes one or more subvolumes and replicates all posix transactions to each. By using this translator in the client graph, systems fault tolerance and data integrity is managed directly from the client.
+Replicate takes two or more subvolumes and replicates all posix transactions to each. By using this translator in the client graph, systems fault tolerance and data integrity is managed directly from the client.
 
 ![Replicate Translator](../images/Replicate.png)
 
