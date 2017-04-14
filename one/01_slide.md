@@ -23,6 +23,9 @@
 * DRBD
   * No "master" or "slave"
   * No journal
+* Ceph
+  * No block devices
+  * No automatic reconfiguration
 
 <!SLIDE bullets incremental transition=fade>
 # Why GlusterFS? #
@@ -46,7 +49,7 @@
 ## Translators ##
 * Distribute
 * Replicate
-* Stripe (Won't be covered)
+* Disperse
 
 <!SLIDE>
 # Translators 101 #
@@ -102,6 +105,30 @@ Combining these creates a scaleable redundant system.
 ![Distribute-Replicate Graph](../images/Distribute-Replicate.png)
 
 
+<!SLIDE bullets>
+# High Availability #
+
+* Highly available data path
+* Replication
+  * Abiter
+* Erasure Coding
+
+<!SLIDE bullets>
+# Consistency #
+* Default to keeping data safe
+* Honor posix safety flags (locks, direct, etc)
+* Quorum
+
+
+<!SLIDE>
+
+# Volume Configurations #
+* Distributed
+* Replicated
+* Distributed Replicated
+* Sharded
+* Dispersed
+
 <!SLIDE>
 # A working volume in under 2 minutes #
 
@@ -113,6 +140,7 @@ Combining these creates a scaleable redundant system.
   * http://lists.nongnu.org/archive/html/gluster-users/
 * IRC: #gluster on Freenode
 * http://www.gluster.org
+* Joe Julian [<me@joejulian.name>](mailto:joejulian.name)
 
 ![ant](../images/smaller-ant.png)
 
